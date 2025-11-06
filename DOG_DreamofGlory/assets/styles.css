@@ -1,0 +1,288 @@
+/* ==========================================================================
+   DOG Alliance — styles.css (for the provided DaisyUI/lofi HTML)
+   Last updated: 2025-11-06
+   - 相容 DaisyUI v4（lofi 主題）
+   - 還原＆強化彩色標籤、事件點、時間軸＆甘特圖
+   - 不使用 color-mix/oklch，確保舊瀏覽器穩定顯示
+   ========================================================================== */
+
+/* ------------------------------
+   基礎布局微調（不破壞 DaisyUI）
+-------------------------------- */
+:root{
+  --acc-foundry: #60a5fa; /* Foundry */
+  --acc-joey:    #fbbf24; /* Crazy Joey */
+  --acc-snow:    #34d399; /* Snowbusters */
+  --acc-mining:  #fb7185; /* Emberfrost / Mining */
+  --acc-merc:    #a78bfa; /* Merc Boss */
+
+  --g-line: var(--fallback-b3, #e5e7eb);
+  --g-surface: var(--fallback-b1, #ffffff);
+  --g-soft: var(--fallback-b2, #f3f4f6);
+  --g-text: var(--fallback-bc, #111827);
+
+  --row-h: 28px;
+  --bar-h: 18px;
+  --bar-px: 8px;
+  --sidebar-w: 220px;
+  --tick-min: 80px;
+  --radius: 12px;
+  --radius-xl: 20px;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.06);
+  --shadow-2: 0 10px 24px rgba(0,0,0,.08);
+}
+
+/* 讓卡片在 lofi 主題下更乾淨一點 */
+.card {
+  box-shadow: var(--shadow-1);
+  border-radius: 12px;
+}
+
+/* Header 的毛玻璃已靠 bg-base-100/80 + backdrop-blur；此處不覆蓋 */
+
+/* ------------------------------
+   即時資訊 / 活動列表 hover 提升
+-------------------------------- */
+#liveList .card, #guideList .card {
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+#liveList .card:hover, #guideList .card:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-2);
+}
+
+/* ------------------------------
+   事件彩色「小圓點」Legend
+-------------------------------- */
+.dot {
+  display:inline-block; width:10px; height:10px; border-radius:50%;
+  margin-right:6px; vertical-align:middle;
+}
+.t-foundry  { background: var(--acc-foundry); }
+.t-joey     { background: var(--acc-joey); }
+.t-snow     { background: var(--acc-snow); }
+.t-mining   { background: var(--acc-mining); }
+.t-merc_boss{ background: var(--acc-merc); }
+
+/* ------------------------------
+   彩色標籤（Badges）
+   用法：<span class="badge badge--foundry">Foundry</span> 等
+-------------------------------- */
+.badge[class*="badge--"] {
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+  font-weight: 600;
+  letter-spacing: .2px;
+}
+.badge--foundry { background: var(--acc-foundry); color:#0b0c0f; }
+.badge--joey    { background: var(--acc-joey);    color:#0b0c0f; }
+.badge--snow    { background: var(--acc-snow);    color:#0b0c0f; }
+.badge--mining  { background: var(--acc-mining);  color:#0b0c0f; }
+.badge--merc    { background: var(--acc-merc);    color:#ffffff; }
+.badge[class*="badge--"]:hover { filter: saturate(1.05); }
+
+/* 若有舊命名 */
+.tag--foundry, .label-chip--foundry { background: var(--acc-foundry); color:#0b0c0f; }
+.tag--joey,    .label-chip--joey    { background: var(--acc-joey);    color:#0b0c0f; }
+.tag--snow,    .label-chip--snow    { background: var(--acc-snow);    color:#0b0c0f; }
+.tag--mining,  .label-chip--mining  { background: var(--acc-mining);  color:#0b0c0f; }
+.tag--merc,    .label-chip--merc    { background: var(--acc-merc);    color:#ffffff; }
+
+/* ------------------------------
+   DaisyUI timeline（縱向）細節
+-------------------------------- */
+.timeline li .timeline-middle {
+  background: var(--acc-foundry); /* 預設點顏色，可被內文自行覆蓋 */
+}
+.timeline li:nth-child(2n) .timeline-middle { background: var(--acc-joey); }
+.timeline li:nth-child(3n) .timeline-middle { background: var(--acc-snow); }
+.timeline li:nth-child(4n) .timeline-middle { background: var(--acc-mining); }
+.timeline li:nth-child(5n) .timeline-middle { background: var(--acc-merc); }
+
+/* ------------------------------
+   甘特圖（Gantt）
+-------------------------------- */
+.gantt-panel{
+  background: var(--g-surface);
+  border: 1px solid var(--g-line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-1);
+  padding: 12px;
+}
+.gantt-toolbar{
+  display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;
+  margin-bottom: 8px;
+}
+.gantt-toolbar .gantt-left{ display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.gantt-toolbar .gantt-right{ display:flex; gap:6px; align-items:center; }
+.gantt-toolbar button{
+  border:1px solid var(--g-line);
+  background: var(--g-soft);
+  padding: 4px 8px; border-radius: 8px;
+}
+.gantt-toolbar select{
+  border:1px solid var(--g-line);
+  background: var(--g-surface);
+  padding: 6px 10px; border-radius: 8px;
+}
+
+/* 顏色（純色） */
+.t-foundry   { background: var(--acc-foundry); }
+.t-joey      { background: var(--acc-joey); }
+.t-snow      { background: var(--acc-snow); }
+.t-mining    { background: var(--acc-mining); }
+.t-merc_boss { background: var(--acc-merc); color:#ffffff; }
+
+/* ------------------------------
+   Responsive
+-------------------------------- */
+@media (max-width: 960px){
+  :root{ --sidebar-w: 180px; --tick-min: 72px; }
+}
+@media (max-width: 640px){
+  :root{ --sidebar-w: 150px; --tick-min: 64px; --row-h: 26px; }
+  h1{ font-size:1.6rem; }
+  h2{ font-size:1.25rem; }
+}
+
+/* ------------------------------
+   無障礙：減少動作偏好
+-------------------------------- */
+@media (prefers-reduced-motion: reduce){
+  #liveList .card, #guideList .card, .gantt-bar { transition: none !important; }
+}
+
+/* ==== Gantt 基本版型（保留 DaisyUI 色系） ==== */
+.gantt-panel { --g-h: 32px; --g-row: 36px; --g-gap: 8px; }
+.gantt-toolbar {
+  display:flex; justify-content:space-between; align-items:center;
+  gap:.75rem; padding:.5rem 0 .75rem;
+}
+.gantt-viewport { display:grid; grid-template-columns: 240px 1fr; gap:12px; }
+.gantt-sidebar { display:flex; flex-direction:column; gap: var(--g-gap); }
+.gantt-canvas { overflow:auto; border-radius: .75rem; background: oklch(98% 0 0); border:1px solid oklch(90% .02 240); }
+.gantt-header { position:sticky; top:0; background: oklch(97% .01 240); border-bottom:1px solid oklch(88% .03 240); display:grid; height: var(--g-h); align-items:center; font-size:.85rem; }
+.gantt-rows { position:relative; }
+.gantt-row { display:grid; height: var(--g-row); border-bottom:1px dashed oklch(90% .02 240); align-items:center; }
+.gantt-cell { border-right:1px solid oklch(92% .02 240); height:100%; }
+.gantt-bar {
+  position:absolute; height: 20px; border-radius: 999px; transform: translateY(-50%);
+  background: var(--bar, oklch(70% .12 250));
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.gantt-legend .dot { display:inline-block; width:10px; height:10px; border-radius:999px; margin:0 .35rem 0 .75rem; vertical-align:middle; }
+.t-foundry   { background: oklch(70% .13 30); }
+.t-joey      { background: oklch(72% .13 330); }
+.t-snow      { background: oklch(85% .08 230); }
+.t-mining    { background: oklch(75% .14 180); }
+.t-merc_boss { background: oklch(70% .12 260); }
+.gantt-today-line {
+  position:absolute; top:0; bottom:0; width:2px; background: oklch(60% .12 250);
+  box-shadow: 0 0 0 2px oklch(98% 0 0);
+}
+.gantt-sidebar .item {
+  display:flex; align-items:center; gap:.5rem; height: var(--g-row);
+  padding-left:.25rem; border-bottom:1px dashed oklch(90% .02 240);
+}
+.gantt-sidebar .tag { font-size:.75rem; opacity:.8; }
+
+.h-timeline { width:100%; }
+.h-timeline__track {
+  position: relative;
+  height: .5rem;
+  background: var(--fallback-bc, rgba(0,0,0,.1));
+  border-radius: .25rem;
+  overflow: hidden;
+}
+.h-timeline__segment {
+  position: absolute;
+  top: 0; bottom: 0;
+  background: var(--seg, var(--primary));
+  opacity: .75;
+}
+.h-timeline__now {
+  position: absolute;
+  top: -4px; bottom: -4px;
+  width: 2px;
+  background: var(--secondary);
+}
+.h-timeline__labels {
+  display:flex; justify-content:space-between;
+  font-size: .8rem; opacity:.8; margin-top:.25rem;
+}
+.h-tl-flag { font-size:.85rem; opacity:.9; }
+
+/* === 強化 #schedule-section 甘特圖 header 行高與換行 === */
+#schedule-section .gantt-header{
+  position: sticky; top: 0; z-index: 2;
+  display: grid;
+  align-items: center;
+  height: auto !important;     /* 關鍵：不要用固定高度 */
+  min-height: 56px;            /* 給兩行的空間 */
+  padding: 4px 0;              /* 一點內距，避免擠壓 */
+  line-height: 1.2;
+  background: var(--g-surface);
+  border-bottom: 1px solid var(--g-line);
+}
+/* 讓每個刻度格可以換行顯示（日期 + 星期 + UTC） */
+#schedule-section .gantt-header .grid > div{
+  padding: 6px 8px;
+  text-align: center;
+  white-space: normal;         /* 允許換行 */
+  word-break: keep-all;        /* 保持單字整體性 */
+  line-height: 1.2;
+}
+
+/* 你的 DOM 是 .gantt-body（不是 .gantt-viewport） */
+#schedule-section .gantt-body{
+  display: grid;
+  grid-template-columns: 240px 1fr;  /* 左側名單 + 右側畫布 */
+  max-height: 520px;
+  overflow: hidden;                  /* 由右側滾動 */
+}
+
+/* 左側名單軸 */
+#schedule-section .gantt-sidebar{
+  background: var(--g-soft);
+  border-right: 1px solid var(--g-line);
+  overflow-y: auto;
+}
+#schedule-section .gantt-sidebar .item{
+  display: flex; align-items: center; gap: .5rem;
+  height: 40px;                      /* 和列高一致 */
+  padding-left: .25rem;
+  border-bottom: 1px dashed oklch(90% .02 240);
+}
+
+/* 右側橫向畫布區 */
+#schedule-section .gantt-rows{
+  position: relative;
+  overflow: auto;                    /* 重要：避免 bar 溢出容器 */
+  border-radius: .75rem;
+  background: oklch(98% 0 0);
+  border: 1px solid oklch(90% .02 240);
+}
+#schedule-section .gantt-row{
+  display: grid;
+  height: 40px;                      /* 和 JS 計算一致（idx*40+8） */
+  border-bottom: 1px dashed oklch(90% .02 240);
+  align-items: center;
+}
+#schedule-section .gantt-cell{
+  border-right: 1px solid oklch(92% .02 240);
+  height: 100%;
+}
+
+/* 甘特 bar 與今天紅線（與 JS 座標對齊） */
+#schedule-section .gantt-bar{
+  position: absolute;
+  height: 22px;                      /* 比 20 再厚一點較醒目 */
+  top: 20px;                         /* 置中每列（40px 的一半） */
+  transform: translateY(-50%);
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+#schedule-section .gantt-today-line{
+  position: absolute; top:0; bottom:0; width:2px;
+  background: #ef4444; opacity: .7;
+}
