@@ -81,7 +81,7 @@
       "type": "yellow_merc",
       "title": {
         "zh": "傭兵榮耀",
-        "en": "Mercenary Glory",
+        "en": "Mercenary Prestige",
         "ko": "용병의 영광",
         "ru": "Слава наёмников",
         "ar": "مجد المرتزقة"
@@ -116,4 +116,5 @@
     }
   ]
 }
+
 
