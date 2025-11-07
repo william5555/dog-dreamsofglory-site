@@ -1,31 +1,30 @@
 {
   "live": [
     {
-  "type": "important",
-  "id": "about-alliance-v1",
-  "sticky": true,
-  "pinned": true,
-  "pinOrder": 0,
-  "title": {
-    "zh": "聯盟介紹",
-    "en": "Alliance Introduction",
-    "ko": "연맹 소개",
-    "ar": "تعريف التحالف",
-    "ru": "О альянсе"
-  },
-  "body": {
-    "zh": "歡迎加入 DOG，我們是一個熱情且友善的聯盟。\n1.請踴躍進行科技捐獻。\n2.請更改為新的暱稱。\n    - 禁止使用「lord12345678」。\n3.請把城市遷移到本部附近。\n4.請參與聯盟旗幟建設。\n5.請投資（投入）聯盟科技研究。\n6.請多加體諒並尊重所有玩家。\n7.如有疑問請踴躍提出疑問\n8.活動資訊將會在此網站呈現",
-    "en": "Welcome to DOG — we are a warm and friendly alliance.\n1. Please actively contribute to Alliance Tech donations.\n2. Please change to your new nickname.\n    - The name \"lord12345678\" is not allowed.\n3. Please relocate your city near the alliance headquarters.\n4. Please participate in building alliance flags.\n5. Please invest/contribute to Alliance Tech research.\n6. Please be considerate and respect all players.\n7. If you have any questions, feel free to ask.\n8. Event information will be posted on this website.",
-    "ko": "DOG에 오신 것을 환영합니다. 우리는 열정적이고 친절한 연맹입니다.\n1. 연맹 기술 기부에 적극 참여해 주세요.\n2. 새 닉네임으로 변경해 주세요.\n    - \"lord12345678\" 사용 금지.\n3. 도시를 연맹 본부 근처로 이전해 주세요.\n4. 연맹 깃발 건설에 참여해 주세요.\n5. 연맹 기술 연구에 투자(기여)해 주세요.\n6. 모든 플레이어를 배려하고 존중해 주세요.\n7. 질문이 있으면 언제든지 문의해 주세요.\n8. 활동 정보는 이 웹사이트에 게시됩니다.",
-    "ar": "مرحبًا بكم في DOG — نحن تحالف حماسي وودود.\n1. يُرجى المشاركة بنشاط في تبرعات تقنية التحالف.\n2. يُرجى تغيير لقبك إلى لقب جديد.\n    - يُمنع استخدام \"lord12345678\".\n3. يُرجى نقل مدينتك إلى قرب مقر التحالف.\n4. يُرجى المشاركة في بناء أعلام التحالف.\n5. يُرجى الاستثمار/الإسهام في أبحاث تقنية التحالف.\n6. يُرجى التحلي بالتفهّم واحترام جميع اللاعبين.\n7. إذا كانت لديك أسئلة، فالرجاء طرحها بكل حرية.\n8. ستُنشر معلومات الفعاليات على هذا الموقع.",
-    "ru": "Добро пожаловать в DOG — мы тёплый и дружелюбный альянс.\n1. Пожалуйста, активно делайте взносы в технологии альянса.\n2. Пожалуйста, смените свой ник на новый.\n    - Имя \"lord12345678\" запрещено.\n3. Пожалуйста, перенесите свой город ближе к штаб-квартире альянса.\n4. Пожалуйста, участвуйте в строительстве флагов альянса.\n5. Пожалуйста, вкладывайтесь в исследования технологий альянса.\n6. Пожалуйста, проявляйте понимание и уважайте всех игроков.\n7. Если у вас есть вопросы, пожалуйста, задавайте их.\n8. Информация о событиях будет публиковаться на этом сайте."
-      },
-    "ts": "2025-11-05T12:00:00Z"
-    },
-
-    {
+      "id": "about-alliance-v1",
       "type": "important",
+      "sticky": true,
+      "pinned": true,
+      "pinOrder": 0,
+      "title": {
+        "zh": "聯盟介紹",
+        "en": "Alliance Introduction",
+        "ko": "연맹 소개",
+        "ar": "تعريف التحالف",
+        "ru": "О альянсе"
+      },
+      "body": {
+        "zh": "歡迎加入 DOG，我們是一個熱情且友善的聯盟。\n1.請踴躍進行科技捐獻。\n2.請更改為新的暱稱。\n    - 禁止使用「lord12345678」。\n3.請把城市遷移到本部附近。\n4.請參與聯盟旗幟建設。\n5.請投資（投入）聯盟科技研究。\n6.請多加體諒並尊重所有玩家。\n7.如有疑問請踴躍提出疑問\n8.活動資訊將會在此網站呈現",
+        "en": "Welcome to DOG — we are a warm and friendly alliance.\n1. Please actively contribute to Alliance Tech donations.\n2. Please change to your new nickname.\n    - The name \"lord12345678\" is not allowed.\n3. Please relocate your city near the alliance headquarters.\n4. Please participate in building alliance flags.\n5. Please invest/contribute to Alliance Tech research.\n6. Please be considerate and respect all players.\n7. If you have any questions, feel free to ask.\n8. Event information will be posted on this website.",
+        "ko": "DOG에 오신 것을 환영합니다. 우리는 열정적이고 친절한 연맹입니다.\n1. 연맹 기술 기부에 적극 참여해 주세요.\n2. 새 닉네임으로 변경해 주세요.\n    - \"lord12345678\" 사용 금지.\n3. 도시를 연맹 본부 근처로 이전해 주세요.\n4. 연맹 깃발 건설에 참여해 주세요.\n5. 연맹 기술 연구에 투자(기여)해 주세요.\n6. 모든 플레이어를 배려하고 존중해 주세요.\n7. 질문이 있으면 언제든지 문의해 주세요.\n8. 활동 정보는 이 웹사이트에 게시됩니다.",
+        "ar": "مرحبًا بكم في DOG — نحن تحالف حماسي وودود.\n1. يُرجى المشاركة بنشاط في تبرعات تقنية التحالف.\n2. يُرجى تغيير لقبك إلى لقب جديد.\n    - يُمنع استخدام \"lord12345678\".\n3. يُرجى نقل مدينتك إلى قرب مقر التحالف.\n4. يُرجى المشاركة في بناء أعلام التحالف.\n5. يُرجى الاستثمار/الإسهام في أبحاث تقنية التحالف.\n6. يُرجى التحلي بالتفهّم واحترام جميع اللاعبين.\n7. إذا كانت لديك أسئلة، فالرجاء طرحها بكل حرية.\n8. ستُنشر معلومات الفعاليات على هذا الموقع.",
+        "ru": "Добро пожаловать в DOG — мы тёплый и дружелюбный альянс.\n1. Пожалуйста, активно делайте взносы в технологии альянса.\n2. Пожалуйста, смените свой ник на новый.\n    - Имя \"lord12345678\" запрещено.\n3. Пожалуйста, перенесите свой город ближе к штаб-квартире альянса.\n4. Пожалуйста, участвуйте в строительстве флагов альянса.\n5. Пожалуйста, вкладывайтесь в исследования технологий альянса.\n6. Пожалуйста, проявляйте понимание и уважайте всех игроков.\n7. Если у вас есть вопросы, пожалуйста, задавайте их.\n8. Информация о событиях будет публиковаться на этом сайте."
+      },
+      "ts": "2025-11-05T12:00:00Z"
+    },
+    {
       "id": "migration-plan-v2",
+      "type": "important",
       "sticky": true,
       "pinned": true,
       "pinOrder": 1,
@@ -37,8 +36,8 @@
         "ru": "Охотничьи ловушки"
       },
       "body": {
-        "en": "Please choose one trap to join based on your schedule. Cooldown is at least 2 days, so you cannot join both.\nTrap 1: 11/8 UTC 14:00\nTrap 2: 11/7 UTC 20:00",
         "zh": "請依照你的時程選擇加入其中一個陷阱。冷卻至少為 2 天，因此不能同時參加兩個。\n陷阱1：11/8 UTC 14:00\n陷阱2：11/7 UTC 20:00",
+        "en": "Please choose one trap to join based on your schedule. Cooldown is at least 2 days, so you cannot join both.\nTrap 1: 11/8 UTC 14:00\nTrap 2: 11/7 UTC 20:00",
         "ko": "일정에 따라 하나의 함정만 선택하여 참여하세요. 쿨다운은 최소 2일이므로 둘 다 참여할 수 없습니다.\n트랩 1: 11/8 UTC 14:00\n트랩 2: 11/7 UTC 20:00",
         "ar": "يرجى اختيار فخ واحد للانضمام إليه وفق جدولك. فترة التهدئة لا تقل عن يومين، لذا لا يمكنك الانضمام إلى كليهما.\nالفخ 1: 11/8 14:00 UTC\nالفخ 2: 11/7 20:00 UTC",
         "ru": "Пожалуйста, выберите один капкан согласно вашему расписанию. Время восстановления не менее 2 дней, поэтому нельзя участвовать в обоих.\nКапкан 1: 11/8 14:00 UTC\nКапкан 2: 11/7 20:00 UTC"
@@ -46,8 +45,8 @@
       "ts": "2025-11-05T13:00:00Z"
     },
     {
-      "type": "rule",
       "id": "nap-rules-permanent-v1",
+      "type": "rule",
       "sticky": true,
       "pinned": true,
       "pinOrder": 2,
@@ -59,8 +58,8 @@
         "ru": "Регламент NAP"
       },
       "body": {
-        "en": "1.) No city attacks\n2.) No resource tile attacks\n3.) No banner attacks\n4.) No poaching members\n5.) Facilities are Free-For-All\n6.) Fortresses and Strongholds will be assigned by NAP\n7.) Consequences for breaking NAP rules: warning, zeroed, blacklisted from NAP\n8.) Attacking rules are subject to change during Kill Event\n9.) NAP protects all members of NAP regardless of power level\n10.) NAP Academies and Farm alliances are protected under these same rules\n11.) No blocking facilities with banners",
         "zh": "1.) 禁止攻擊城市\n2.) 禁止攻擊資源地\n3.) 禁止攻擊聯盟旗幟\n4.) 禁止挖角成員\n5.) 設施採自由參與（Free-For-All）\n6.) 堡壘與要塞由 NAP 指派\n7.) 違規處置：警告 → 清零 → 列入 NAP 黑名單\n8.) 殺戮活動（KE）期間攻擊規則可能調整\n9.) NAP 不分戰力保護所有 NAP 成員\n10.) NAP 學院與農場聯盟同受本規則保護\n11.) 禁止以旗幟封鎖設施",
+        "en": "1.) No city attacks\n2.) No resource tile attacks\n3.) No banner attacks\n4.) No poaching members\n5.) Facilities are Free-For-All\n6.) Fortresses and Strongholds will be assigned by NAP\n7.) Consequences for breaking NAP rules: warning, zeroed, blacklisted from NAP\n8.) Attacking rules are subject to change during Kill Event\n9.) NAP protects all members of NAP regardless of power level\n10.) NAP Academies and Farm alliances are protected under these same rules\n11.) No blocking facilities with banners",
         "ko": "1.) 도시 공격 금지\n2.) 자원 타일 공격 금지\n3.) 연맹 깃발 공격 금지\n4.) 회원 스카우트/빼가기 금지\n5.) 시설은 자유참여(Free-For-All)\n6.) 요새와 거점은 NAP에서 배정\n7.) 위반 시 조치: 경고 → 제로(초토화) → NAP 블랙리스트\n8.) 처치 이벤트(KE) 기간에는 공격 규칙이 변경될 수 있음\n9.) NAP은 전투력과 무관하게 모든 NAP 구성원을 보호\n10.) NAP 아카데미와 농장 연맹도 동일 규정 적용\n11.) 깃발로 시설을 막는 행위 금지",
         "ar": "1.) منع مهاجمة المدن\n2.) منع مهاجمة عقد الموارد\n3.) منع مهاجمة رايات التحالف\n4.) منع استقطاب/خطف الأعضاء\n5.) المنشآت متاحة للجميع (Free-For-All)\n6.) تُخصَّص الحصون والقلاع عبر NAP\n7.) عواقب خرق قواعد NAP: تحذير، تصفير، وإدراج في القائمة السوداء الخاصة بـ NAP\n8.) قد تتغيّر قواعد الهجوم أثناء حدث القتل (KE)\n9.) يحمي NAP جميع أعضائه بغضّ النظر عن مستوى القوة\n10.) الأكاديميات وتحالفات المزارع التابعة لـ NAP مشمولة بهذه القواعد\n11.) يُحظر حجب المنشآت بالرايات",
         "ru": "1.) Запрещены атаки городов\n2.) Запрещены атаки ресурсных клеток\n3.) Запрещены атаки флагов альянса\n4.) Запрещено переманивание участников\n5.) Объекты (facilities) — свободный доступ (Free-For-All)\n6.) Крепости и цитадели распределяются по NAP\n7.) За нарушение NAP: предупреждение → обнуление → внесение в чёрный список NAP\n8.) Во время Kill Event правила атак могут меняться\n9.) NAP защищает всех участников NAP независимо от силы\n10.) Академии и «фермерские» альянсы NAP защищены теми же правилами\n11.) Запрещено блокировать объекты флагами"
@@ -68,8 +67,8 @@
       "ts": "2025-11-05T13:20:00Z"
     },
     {
-      "type": "important",
       "id": "nap-alliance-list",
+      "type": "important",
       "sticky": true,
       "pinned": true,
       "pinOrder": 3,
@@ -80,18 +79,24 @@
         "ar": "قائمة تحالفات NAP",
         "ru": "Список альянсов NAP"
       },
-      "body": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy",
-      "ts": "2025-11-05T13:25:00Z"
+      "body": {
+        "zh": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy",
+        "en": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ko": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ar": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ru": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\nKOR – kor academy\nABC\nARS – Gab academy"
       },
-      {
-        "id": "fortress-battle-2025-11-07",
-        "type": "event",
-        "title": {
-          "zh": "堡壘爭奪戰",
-          "en": "Fortress Battle",
-          "ko": "요새 쟁탈전",
-          "ar": "معركة القلعة",
-          "ru": "Битва за крепость"
+      "ts": "2025-11-05T13:25:00Z"
+    },
+    {
+      "id": "fortress-battle-2025-11-07",
+      "type": "event",
+      "title": {
+        "zh": "堡壘爭奪戰",
+        "en": "Fortress Battle",
+        "ko": "요새 쟁탈전",
+        "ar": "معركة القلعة",
+        "ru": "Битва за крепость"
       },
       "body": {
         "zh": "今日是堡壘爭奪戰的日子，請各位注意聯盟內管理員的指揮，不要進行個人攻擊。所有參與者在爭奪物件時請加入集結，以確保所有人都能獲得良好的首次佔領獎勵，並請配合以下規定：\n1) 盾兵／矛兵／射手比例為 50/20/30，總兵力不得超過 40k。\n2) 英雄配置分為攻守型，最左側英雄提供最重要的加乘。攻擊時最左側請放 杰⻄ 或 茉莉，防守時請放 謝爾蓋 或 派翠克。若無敵人事先佔領，可直接配置防守型英雄。\n3) 本次目標為一號要塞（Stronghold 1）與二號堡壘（Fortress 2）。凡欲參與集結者，請將城市遷移至當前爭奪中的堡壘附近以利集結。",
@@ -101,9 +106,29 @@
         "ru": "Сегодня — день битвы за крепость. Просьба строго следовать указаниям администраторов альянса и не совершать одиночных атак. При борьбе за объект вступайте в ралли, чтобы все получили хороший бонус за первое занятие. Соблюдайте следующее:\n1) Соотношение Пехота/Копейщики/Стрелки — 50/20/30; общий размер войск не более 40k.\n2) Сетап героев различается в атаке и обороне; самый левый герой даёт главный бонус. В атаке слева ставьте Джесси или Молли, в обороне — Сергей или Патрик. Если противник заранее не занял объект, можно сразу использовать оборонительный сетап.\n3) Цели сражения: Крепость №1 (Stronghold 1) и Крепость №2 (Fortress 2). Все, кто планирует участвовать в ралли, перенесите город ближе к активной крепости для удобства сбора."
       },
       "ts": "2025-11-07T00:00:00Z"
-      }
+    },
+    {
+      "id": "nap7-rules-2025-11-07",
+      "type": "rule",
+      "title": {
+        "zh": "全軍參戰",
+        "en": "Brothers in Arms",
+        "ko": "전군 총동원",
+        "ar": "رفقاء السلاح",
+        "ru": "Братья по оружию"
+      },
+      "body": {
+        "zh": "【集結風險自負!!】\n\n1) NAP 期間僅允許攻擊「資源地」。\n2) 允許攻擊任何不在 NAP 範圍內的「城市」。\n3) 若不確定是否可攻擊，請先詢問再行動！\n4) 本伺為「NAP 7」：排行榜前 7 名的聯盟及其學院均在 NAP 內。",
+        "en": "Gather at your own risk!!\n\n1) During NAP, only resource tile attacks are allowed.\n2) City attacks are allowed on anyone not covered by the NAP.\n3) If you're not sure whether you can attack someone, please ask before doing so!\n4) This server is NAP 7 — the top 7 alliances on the leaderboard and their academies are included.",
+        "ko": "집결은 본인 책임!!\n\n1) NAP 기간에는 자원 타일만 공격 가능합니다.\n2) NAP에 속하지 않은 대상의 도시는 공격 가능합니다.\n3) 공격 가능 여부가 확실하지 않다면 먼저 문의하세요!\n4) 현재는 NAP 7입니다. 리더보드 상위 7개 연맹과 그 아카데미가 포함됩니다.",
+        "ar": "تجمّع على مسؤوليتك!!\n\n1) خلال NAP يُسمح بهجمات بلاطات الموارد فقط.\n2) يُسمح بمهاجمة مدن أي لاعب غير مشمول في NAP.\n3) إن لم تكن متأكدًا من إمكانية الهجوم، فاسأل أولًا قبل التنفيذ!\n4) النظام هو NAP-7: التحالفات السبعة الأولى في لوحة الصدارة وأكاديمياتها مشمولة.",
+        "ru": "Собирайтесь на свой страх и риск!!\n\n1) Во время NAP разрешены только атаки на ресурсные тайлы.\n2) Города игроков, не входящих в NAP, можно атаковать.\n3) Если не уверены, можно ли атаковать — сначала спросите!\n4) Действует NAP-7: в него входят топ-7 альянсов в рейтинге и их академии."
+      },
+      "ts": "2025-11-07T00:00:00Z"
+    }
   ]
 }
+
 
 
 
