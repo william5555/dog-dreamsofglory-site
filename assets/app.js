@@ -154,7 +154,7 @@ const TYPE_LABELS = {
   lucky_wheel:  { zh:"幸運大轉盤", en:"Lucky Wheel",         ko:"행운의 룰렛", ru:"Колесо удачи",     ar:"عجلة الحظ" },
   pve_beasts:   { zh:"野獸討伐",   en:"Beast Hunt",          ko:"야수 소탕",   ru:"Охота на зверей",  ar:"صيد الوحوش" },
   blue_battle:  { zh:"全軍參戰",   en:"Brothers in Arms",    ko:"전군 총동원", ru:"Братья по оружию", ar:"رفقاء السلاح" },
-  yellow_merc:  { zh:"傭兵榮耀",   en:"Mercenary Glory",     ko:"용병의 영광", ru:"Слава наёмников",  ar:"مجد المرتزقة" },
+  yellow_merc:  { zh:"傭兵榮耀",   en:"Mercenary Prestige",     ko:"용병의 영광", ru:"Слава наёмников",  ar:"مجد المرتزقة" },
   castle_war:   { zh:"決戰王城",   en:"Castle Battle",       ko:"왕성 결전",   ru:"Битва за замок",   ar:"معركة القلعة" }
 };
 function i18nTypeName(code){
@@ -1972,3 +1972,4 @@ DOG.i18nText = function(objOrString){
     return objOrString[L] || objOrString.en || objOrString.zh || Object.values(objOrString)[0] || '';
   }catch{ return String(objOrString||''); }
 };
+
