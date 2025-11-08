@@ -1195,7 +1195,7 @@ const GUIDE_CATALOG = [
     pinned: true,
     pinOrder: 8, // 依你的排序可調整
     title: {
-      zh: "霜火活動（Frostfire）",
+      zh: "燃霜礦區活動（Frostfire）",
       en: "Frostfire",
       ko: "프로스트파이어",
       ar: "فروستفاير",
@@ -1972,4 +1972,5 @@ DOG.i18nText = function(objOrString){
     return objOrString[L] || objOrString.en || objOrString.zh || Object.values(objOrString)[0] || '';
   }catch{ return String(objOrString||''); }
 };
+
 
