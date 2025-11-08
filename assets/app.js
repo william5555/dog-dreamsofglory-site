@@ -1254,11 +1254,11 @@ const GUIDE_CATALOG = [
     pinned: true,
     pinOrder: 9, // 依你的排序可調整
     title: {
-      zh: "傭兵首領戰規則",
-      en: "Mercenary Boss Battles | Rules",
-      ko: "용병 보스전 규칙",
-      ar: "معارك زعيم المرتزقة | القواعد",
-      ru: "Бои с наёмным боссом | Правила"
+      zh: "傭兵榮耀",
+      en: "Mercenary Prestige | Rules",
+      ko: "용병의 영광",
+      ar: "مجد المرتزقة",
+      ru: "Слава наёмников"
     },
     items: [
       // 概述 / Overview
@@ -1972,5 +1972,6 @@ DOG.i18nText = function(objOrString){
     return objOrString[L] || objOrString.en || objOrString.zh || Object.values(objOrString)[0] || '';
   }catch{ return String(objOrString||''); }
 };
+
 
 
