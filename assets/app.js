@@ -552,68 +552,368 @@ const GUIDE_CATALOG = [
       ru: "Bear Trap: выбор героев"
     },
     items: [
+      // ===== 總原則 =====
       {
-        zh: "請熟悉此指南，以便未來參加獵熊陷阱活動！",
-        en: "Please familiarize yourself with this guide for future Bear Traps!",
-        ko: "향후 곰 덫 참여를 위해 이 가이드를 숙지해 주세요!",
-        ar: "يُرجى الاطّلاع على هذا الدليل والاستعداد لمصائد الدببة القادمة!",
-        ru: "Пожалуйста, ознакомьтесь с этим гайдом к будущим «Bear Trap»!"
+        zh: `【獵熊陷阱總原則】
+  打熊時的加成優先順序是：
+  攻擊 ＞ 傷害（含穿透／傷害值）＞ 殺傷（受傷提高、減防）。
+  機率型增傷不上車身，放越多只會讓平均傷害更不穩定。`,
+        en: `【General principle】
+  For Bear Trap rallies, prioritize buffs in this order:
+  ATK ＞ Damage (incl. penetration / flat) ＞ Wounding / DEF reduction.
+  Do NOT put RNG-based damage buffs on the rally body; more RNG = less stable DPS.`,
+        ko: `【곰 덫 기본 원칙】
+  곰 덫 랠리에서 버프 우선순위는
+  공격력 ＞ 피해(관통/피해값 포함) ＞ 살상/방어 감소 입니다.
+  확률형 피해 증가 스킬은 차체에 올리지 않는 것이 좋습니다. 많이 넣을수록 딜이 불안정해집니다.`,
+        ar: `【المبدأ العام】
+  في نشاط مصيدة الدب، أولوية التعزيز كالتالي:
+  الهجوم ＞ الضرر (بما في ذلك الاختراق / الضرر الثابت) ＞ الإصابة / خفض الدفاع.
+  لا تضع أبطال زيادة الضرر الاحتمالية في جسم الحشد؛ فذلك يجعل الضرر غير مستقر.`,
+        ru: `【Общий принцип】
+  В ралли Bear Trap приоритет бафов такой:
+  Атака ＞ Урон (включая пробив / плоский бонус) ＞ Калечение / снижение защиты.
+  Не ставьте на тело ралли героев со случайным уроном: больше RNG — менее стабильный ДПС.`
       },
       {
-        zh: "發起集結者：請使用你最強的三位英雄",
-        en: "Rally starters: Use your 3 strongest heroes",
-        ko: "랠리 개시자: 가장 강한 영웅 3명을 사용하세요",
-        ar: "مُطلِقو الحشد: استخدموا أقوى ثلاثة أبطال لديكم",
-        ru: "Инициаторы ралли: используйте трёх самых сильных героев"
+        zh: `【星數與技能解鎖】
+  如果某英雄的攻擊／傷害加成要升到 2★ 才會解鎖，
+  而你目前尚未達到 2★，請不要用那個英雄來參與獵熊集結。`,
+        en: `【Star level & skills】
+  If a hero’s ATK / damage bonus only unlocks at 2★
+  and you don’t have 2★ yet, do NOT use that hero in Bear Trap rallies.`,
+        ko: `【별과 스킬 해금】
+  어떤 영웅의 공격/피해 증가 효과가 2성에서만 열리는데
+  아직 2성이 아니라면, 그 영웅은 곰 덫 랠리에 쓰지 마세요.`,
+        ar: `【النجوم وفتح المهارات】
+  إذا كان تأثير زيادة الهجوم أو الضرر لا ينفتح إلا عند ★2
+  ولم تصل إليها بعد، فلا تستخدم هذا البطل في مصيدة الدب.`,
+        ru: `【Звёзды и навыки】
+  Если бонус к атаке/урону у героя открывается только с 2★,
+  а у вас её нет, не берите этого героя в ралли Bear Trap.`
+      },
+
+      // ===== 角色定位 =====
+      {
+        zh: `【集結發起者（車身隊長）】
+  車身使用你帳號中最強的三個英雄，
+  其中至少有一名必須是提供「純粹攻擊或傷害加成」的英雄，
+  用來拉高整體集結傷害。`,
+        en: `【Rally starter (body leader)】
+  For the rally body, use your three strongest heroes.
+  At least one of them must provide a pure ATK or damage bonus,
+  to maximize total rally damage.`,
+        ko: `【랠리 개시자(차체 리더)】
+  차체에는 계정에서 가장 강한 영웅 3명을 사용하고,
+  그중 최소 1명은 ‘순수 공격/피해 증가 버프’를 주는 영웅이어야
+  전체 랠리 딜을 극대화할 수 있습니다.`,
+        ar: `【قائد الحشد】
+  في جسم الحشد، استخدم أقوى ثلاثة أبطال لديك،
+  ويجب أن يقدّم واحد منهم على الأقل زيادة خالصة في الهجوم أو الضرر
+  لرفع ضرر الحشد الكلي.`,
+        ru: `【Лидер ралли (инициатор)】
+  На тело ралли ставьте трёх самых сильных героев,
+  и минимум один из них должен давать чистый бонус к атаке или урону,
+  чтобы поднять общий урон ралли.`
       },
       {
-        zh: "參加集結者：以下任一主將＋任意 2 位英雄",
-        en: "Rally joiners: Use one of the following leads + any 2 heroes",
-        ko: "랠리 참가: 아래 리드 중 하나 + 임의의 영웅 2명",
-        ar: "المنضمون إلى الحشد: استخدم أحد القادة التاليين + أي بطلين",
-        ru: "Участники ралли: один из лидеров ниже + любые 2 героя"
+        zh: `【集結參與者（跟車者）】
+  系統只吃「最左邊英雄的遠征技能」（阿拉伯語介面為最右邊）。
+  左欄放上你最好的增傷英雄，其餘兩欄放任何英雄皆可。
+  如果完全沒有合格的增傷英雄，請只派兵不上英雄。`,
+        en: `【Rally joiners】
+  Only the expedition skill of the leftmost hero counts
+  (rightmost in the Arabic UI).
+  Put your best ATK/damage buff hero in that slot,
+  and fill the other two with any heroes.
+  If you truly have no good buff hero, send only troops with no heroes.`,
+        ko: `【랠리 참가자】
+  시스템은 ‘맨 왼쪽 영웅의 원정 스킬’만 적용합니다
+  (아랍어 UI에서는 맨 오른쪽).
+  가장 좋은 공격/피해 증가 영웅을 그 자리에 두고,
+  나머지 두 칸은 아무 영웅이나 넣어도 됩니다.
+  정말 쓸 만한 버프 영웅이 없다면 영웅 없이 병력만 보내세요.`,
+        ar: `【المشاركون في الحشد】
+  يتم احتساب مهارة البطل في الخانة الأولى فقط
+  (في واجهة العربية تكون الخانة اليمنى).
+  ضع أفضل بطل لزيادة الهجوم/الضرر في هذه الخانة،
+  واستخدم أي أبطال في الخانتين الباقيتين.
+  إن لم يكن لديك بطل مناسب، فأرسِل القوات فقط بدون أبطال.`,
+        ru: `【Участники ралли】
+  Учитывается только навык экспедиции героя в первом слоте
+  (в арабском интерфейсе — правый крайний).
+  Поставьте туда лучшего баф-героя к атаке/урону,
+  остальные два слота можно заполнить любыми героями.
+  Если подходящего баф-героя нет, отправляйте только войска.`
+      },
+
+      // ===== 一、集結發起者（車身）建議 =====
+      {
+        zh: `一、集結發起者（車身）建議
+  以下為「當發起者」時的英雄排序：優先攻擊＋25%，再來攻擊＋15%，再來傷害／穿透＋25%。`,
+        en: `I. Recommended rally starters (body)
+  When starting the rally, prioritize heroes with +25% ATK,
+  then +15% ATK, then +25% damage / penetration.`,
+        ko: `Ⅰ. 랠리 개시자(차체) 추천
+  랠리를 시작할 때는 공격 +25% 영웅을 최우선으로,
+  그다음 공격 +15%, 그다음 피해/관통 +25% 영웅을 사용하세요.`,
+        ar: `أولًا: الأبطال الموصى بهم كقادة للحشد
+  عند إطلاق الحشد، أعطِ الأولوية لأبطال هجوم +25٪،
+  ثم هجوم +15٪، ثم ضرر/اختراق +25٪.`,
+        ru: `I. Рекомендуемые лидеры (тело ралли)
+  При старте ралли в приоритете герои с атакой +25%,
+  затем с атакой +15%, затем с уроном/пробивом +25%.`
       },
       {
-        zh: `以 ${nameOf("jessie").zh} 為左位主將＋任意 2 位英雄`,
-        en: `Use ${nameOf("jessie").en} as lead (far left) + any 2 heroes`,
-        ko: `좌측 주영웅으로 ${nameOf("jessie").ko} + 임의의 2명`,
-        ar: `اجعل ${nameOf("jessie").ar} قائداً (أقصى اليسار) + أي بطلين`,
-        ru: `Лидер слева — ${nameOf("jessie").ru} + любые 2 героя`
+        zh: `【車身優先一：攻擊＋25%】
+  書允 Seo-yoon／布拉德利 Bradley／馬格努斯 Magnus／魯弗斯 Rufus。
+  全體攻擊＋25%，能用時盡量由這一組來當集結發起者。`,
+        en: `【Starter Tier 1: +25% ATK】
+  Seo-yoon / Bradley / Magnus / Rufus.
+  They give +25% ATK to all troops and should be your first choice as rally starters whenever available.`,
+        ko: `【차체 1티어: 공격 +25%】
+  서윤 / 브래들리 / 매그너스 / 루퍼스.
+  모든 부대 공격 +25%를 주므로, 가능하다면 항상 이들로 랠리를 시작하세요.`,
+        ar: `【الطبقة الأولى للقائد: هجوم +25٪】
+  Seo-yoon و Bradley و Magnus و Rufus.
+  يمنحون هجومًا +25٪ لجميع القوات، فاستعملهم كخيار أول لقيادة الحشد متى أمكن.`,
+        ru: `【Лидеры 1-го эшелона: атака +25%】
+  Seo-yoon / Bradley / Magnus / Rufus.
+  Дают +25% к атаке всех войск; используйте их как основной выбор для старта ралли.`
       },
       {
-        zh: `以 ${nameOf("jeronimo").zh} 為左位主將＋任意 2 位英雄`,
-        en: `Use ${nameOf("jeronimo").en} as lead (far left) + any 2 heroes`,
-        ko: `좌측 주영웅으로 ${nameOf("jeronimo").ko} + 임의의 2명`,
-        ar: `اجعل ${nameOf("jeronimo").ar} قائداً (أقصى اليسار) + أي بطلين`,
-        ru: `Лидер слева — ${nameOf("jeronimo").ru} + любые 2 героя`
+        zh: `【車身優先二：攻擊＋15%】
+  菲蘭德 Philly／格里高利 Gregory。
+  攻擊＋15%，防禦＋10%，在缺少＋25% 攻擊英雄時，
+  是非常實用的替代選擇。`,
+        en: `【Starter Tier 2: +15% ATK】
+  Philly / Gregory.
+  They grant +15% ATK and +10% DEF, and are very useful substitutes
+  when you don’t have enough +25% ATK heroes.`,
+        ko: `【차체 2티어: 공격 +15%】
+  필리 / 그레고리.
+  공격 +15%, 방어 +10%를 제공하며,
+  공+25% 영웅이 부족할 때 매우 쓸 만한 대체 카드입니다.`,
+        ar: `【الطبقة الثانية للقائد: هجوم +15٪】
+  Philly و Gregory.
+  يمنحان هجومًا +15٪ ودفاعًا +10٪، وهما بديلان مفيدان
+  عند عدم توفر أبطال هجوم +25٪ كفاية.`,
+        ru: `【Лидеры 2-го эшелона: атака +15%】
+  Philly / Gregory.
+  Дают +15% к атаке и +10% к защите, и являются хорошей заменой,
+  когда героев с атакой +25% не хватает.`
       },
       {
-        zh: `以 ${nameOf("seoyoon").zh} 為左位主將＋任意 2 位英雄`,
-        en: `Use ${nameOf("seoyoon").en} as lead (far left) + any 2 heroes`,
-        ko: `좌측 주영웅으로 ${nameOf("seoyoon").ko} + 임의의 2명`,
-        ar: `اجعل ${nameOf("seoyoon").ar} قائداً (أقصى اليسار) + أي بطلين`,
-        ru: `Лидер слева — ${nameOf("seoyoon").ru} + любые 2 героя`
+        zh: `【車身優先三：傷害值／穿透＋25%】
+  杰西 Jessie／杰塞爾 Jasser／赫羅尼莫 Jeronimo／布蘭奇 Blanchette／赫爾薇爾 Hervor。
+  提供全體傷害值／穿透＋25%，雖然略次於攻擊加成，
+  但仍然是穩定且強力的選擇。`,
+        en: `【Starter Tier 3: +25% damage / penetration】
+  Jessie / Jasser / Jeronimo / Blanchette / Hervor.
+  They provide +25% damage/penetration to all troops.
+  Slightly weaker in priority than pure ATK buffs, but still very strong and stable.`,
+        ko: `【차체 3티어: 피해값/관통 +25%】
+  제시 / 제설 / 헤로니모 / 블랑셰 / 헤르보르.
+  모든 부대 피해/관통 +25%를 제공하며,
+  공격 버프보다 우선순위는 낮지만 여전히 강력하고 안정적입니다.`,
+        ar: `【الطبقة الثالثة للقائد: ضرر/اختراق +25٪】
+  Jessie و Jasser و Jeronimo و Blanchette و Hervor.
+  يمنحون ضررًا/اختراقًا +25٪ لجميع القوات،
+  وإن كانوا أقل أولوية من زيادة الهجوم البحتة إلا أنهم ما يزالون خيارًا قويًا وثابتًا.`,
+        ru: `【Лидеры 3-го эшелона: урон/пробив +25%】
+  Jessie / Jasser / Jeronimo / Blanchette / Hervor.
+  Дают +25% к урону/пробиву всех отрядов; по приоритету ниже чистой атаки,
+  но это по-прежнему сильный и стабильный выбор.`
       },
       {
-        zh: `以 ${nameOf("jasser").zh} 為左位主將＋任意 2 位英雄`,
-        en: `Use ${nameOf("jasser").en} as lead (far left) + any 2 heroes`,
-        ko: `좌측 주영웅으로 ${nameOf("jasser").ko} + 임의의 2명`,
-        ar: `اجعل ${nameOf("jasser").ar} قائداً (أقصى اليسار) + أي بطلين`,
-        ru: `Лидер слева — ${nameOf("jasser").ru} + любые 2 героя`
+        zh: `【車身其他穩定增傷】
+  玲奈 Reina：普通攻擊傷害＋30%。
+  索尼婭 Sonya：全體傷害＋20%。
+  諾拉 Norah：盾兵＋射手限定，受傷－15%，傷害＋15%。
+  以上屬於穩定增傷，沒有前面幾組時可以考慮。`,
+        en: `【Other stable buffs for starters】
+  Reina: normal attack damage +30%.
+  Sonya: all damage +20%.
+  Norah: shield + marksman only, taken damage -15%, dealt damage +15%.
+  These are stable buffs and can be used when you lack the higher-tier options above.`,
+        ko: `【차체 기타 안정 버프】
+  레이나: 일반 공격 피해 +30%.
+  소냐: 전체 피해 +20%.
+  노라: 방패병+사수 한정, 받는 피해 -15%, 가하는 피해 +15%.
+  위 영웅들은 안정적인 피해 증가를 제공하므로,
+  앞선 티어 영웅이 없을 때 고려할 수 있습니다.`,
+        ar: `【زيادات ضرر ثابتة أخرى للقائد】
+  Reina: ضرر الهجوم العادي +30٪.
+  Sonya: ضرر كلي +20٪.
+  Norah: مخصّصة لوحدات الدروع + الرماة، ضرر مستلم -15٪، ضرر مُلحَق +15٪.
+  هذه زيادات ضرر ثابتة يمكن الاعتماد عليها عند غياب الخيارات الأعلى.`,
+        ru: `【Прочие стабильные бафы для лидера】
+  Reina: урон обычной атаки +30%.
+  Sonya: общий урон +20%.
+  Norah: только для щитоносцев и стрелков, получаемый урон -15%, наносимый +15%.
+  Это стабильные бафы, к которым можно обратиться, если героев выше нет.`
       },
       {
-        zh: "若上述主將均不可用，請不要派英雄（僅派部隊）",
-        en: "If none of the above leads are available, send NO heroes (troops only)",
-        ko: "위 리드가 모두 불가하면 영웅을 보내지 마세요(부대만 파견)",
-        ar: "إن لم يتوفر أي من القادة المذكورين، فلا تُرسل أبطالاً (أرسل القوات فقط)",
-        ru: "Если ни один из лидеров недоступен, героев НЕ отправлять (только войска)"
+        zh: `【車身的殺傷／減防】
+  格溫 Gwen：目標受到傷害＋25%。
+  亨德里克 Hendrik／麗姬婭 Ligeia：敵軍防禦－25%。
+  理論上很強，但依「攻擊 ＞ 傷害 ＞ 殺傷」的排序，
+  通常排在純攻擊／傷害加成之後。`,
+        en: `【Wounding / DEF down for starters】
+  Gwen: targets take +25% damage.
+  Hendrik / Ligeia: enemy DEF -25%.
+  They are theoretically strong, but by the rule
+  “ATK ＞ damage ＞ wounding/DEF down”, they come after pure ATK/damage buffs.`,
+        ko: `【차체 살상/방어 감소 영웅】
+  그웬: 대상이 받는 피해 +25%.
+  헨드릭/리게이아: 적 방어 -25%.
+  이론상 매우 강력하지만,
+  ‘공격 ＞ 피해 ＞ 살상/방깎’ 우선순위에 따라
+  순수 공격/피해 증가 영웅 다음에 고려하는 편이 좋습니다.`,
+        ar: `【القادة ذوو الإصابة/خفض الدفاع】
+  Gwen: الهدف يتلقى ضررًا +25٪.
+  Hendrik و Ligeia: دفاع العدو -25٪.
+  هم أقوياء نظريًا، لكن حسب قاعدة
+  "الهجوم ＞ الضرر ＞ الإصابة/خفض الدفاع" فهم أقل أولوية من زيادة الهجوم أو الضرر.`,
+        ru: `【Калечение / -DEF для лидера】
+  Gwen: цель получает +25% урона.
+  Hendrik / Ligeia: защита противника -25%.
+  Теоретически это сильные эффекты, но по правилу
+  «Атака ＞ урон ＞ калечение/снижение DEF» они идут после чистой атаки и урона.`
       },
       {
-        zh: "參加獵熊陷阱時，除了上述主將以外，請勿以其他英雄作為左側主將（最左列）",
-        en: "When joining Bear Trap, do NOT set any other hero as lead (far left) except the above",
-        ko: "곰 덫 참여 시 위 영웅 외의 다른 영웅을 좌측 주영웅으로 절대 배치하지 마세요",
-        ar: "عند الانضمام إلى مصيدة الدب، لا تضع أي بطل آخر قائداً (أقصى اليسار) غير المذكورين أعلاه",
-        ru: "При присоединении к Bear Trap НЕ ставьте лидером (крайний левый слот) никого, кроме перечисленных выше"
+        zh: `【車身不建議：機率型增傷】
+  羅根 Logan／米娅 Mia／格雷格 Greg／琳恩 Lynn／韋恩 Wayne／弗洛拉 Flora。
+  他們的增傷依賴機率觸發，輸出忽高忽低，
+  在獵熊陷阱中不適合作為集結發起者。`,
+        en: `【Not recommended as starters: RNG damage】
+  Logan / Mia / Greg / Lynn / Wayne / Flora.
+  Their damage boosts are chance-based, making DPS very unstable,
+  so they are not suitable as rally starters for Bear Trap.`,
+        ko: `【차체 비추천: 확률형 피해 증가】
+  로건 / 미아 / 그레그 / 린 / 웨인 / 플로라.
+  피해 증가가 확률 발동이라 딜이 들쭉날쭉해서,
+  곰 덫 랠리의 개시자로는 적합하지 않습니다.`,
+        ar: `【غير مفضّلين كقادة: زيادة ضرر احتمالية】
+  Logan و Mia و Greg و Lynn و Wayne و Flora.
+  زيادة الضرر لديهم تعتمد على الاحتمال، ما يجعل الضرر غير مستقر،
+  ولذلك لا يُنصح بهم كقادة في مصيدة الدب.`,
+        ru: `【Не рекомендуются как лидеры: случайный урон】
+  Logan / Mia / Greg / Lynn / Wayne / Flora.
+  Их бонус к урону срабатывает по шансу, из-за чего ДПС сильно скачет,
+  поэтому они плохой выбор для роли инициатора в Bear Trap.`
+      },
+
+      // ===== 二、集結參與者（跟車）建議 =====
+      {
+        zh: `二、集結參與者（跟車）建議
+  原則與車身相同，但更重視「自己那隊的穩定輸出」。
+  左欄放穩定增傷英雄，其餘兩欄隨意即可。`,
+        en: `II. Recommended rally joiners
+  The principles are the same as for the rally body,
+  but you care even more about your own army’s stable damage.
+  Put a stable damage/ATK buff hero in the first slot; the others can be anything.`,
+        ko: `Ⅱ. 랠리 참가자(따라가는 부대) 추천
+  원칙은 차체와 같지만,
+  자신 부대의 안정적인 딜이 더 중요합니다.
+  첫 슬롯에는 안정적인 공격/피해 증가 영웅을 넣고,
+  나머지는 어떤 영웅이든 괜찮습니다.`,
+        ar: `ثانيًا: الأبطال الموصى بهم كمشاركين
+  المبدأ هو نفسه كما في جسم الحشد،
+  لكن التركيز هنا أكبر على ثبات ضرر وحدتك.
+  ضع بطل زيادة ضرر/هجوم ثابت في الخانة الأولى، والباقي يمكن أن يكون أي أبطال.`,
+        ru: `II. Рекомендуемые участники ралли
+  Принцип тот же, что и для тела ралли,
+  но ещё важнее стабильный урон именно вашего отряда.
+  В первый слот ставим героя со стабильным бафом к атаке/урону, остальные — любые.`
+      },
+      {
+        zh: `【跟車首選：攻擊＋25%／攻擊＋15%】
+  書允／布拉德利／馬格努斯／魯弗斯：攻擊＋25%。
+  菲蘭德／格里高利：攻擊＋15%，防禦＋10%。
+  在跟車時同樣非常強勢，能穩定拉高自己部隊的輸出。`,
+        en: `【Best joiners: +25% / +15% ATK】
+  Seo-yoon / Bradley / Magnus / Rufus: +25% ATK.
+  Philly / Gregory: +15% ATK, +10% DEF.
+  They remain extremely strong as rally joiners and reliably boost your own damage.`,
+        ko: `【참가 최우선: 공격 +25% / +15%】
+  서윤 / 브래들리 / 매그너스 / 루퍼스: 공격 +25%.
+  필리 / 그레고리: 공격 +15%, 방어 +10%.
+  참가 시에도 매우 강력하여, 자신의 부대 딜을 안정적으로 끌어올려 줍니다.`,
+        ar: `【أفضل المشاركين: هجوم +25٪ / +15٪】
+  Seo-yoon و Bradley و Magnus و Rufus: هجوم +25٪.
+  Philly و Gregory: هجوم +15٪، دفاع +10٪.
+  يبقون أقوياء جدًا كمشاركين ويساعدون على رفع ضرر وحدتك بثبات.`,
+        ru: `【Лучшие участники: атака +25% / +15%】
+  Seo-yoon / Bradley / Magnus / Rufus: атака +25%.
+  Philly / Gregory: атака +15%, защита +10%.
+  Они также очень сильны в роли участников и стабильно поднимают урон вашего отряда.`
+      },
+      {
+        zh: `【跟車優先二：傷害值／穿透＋25%】
+  杰西／杰塞爾／赫羅尼莫／布蘭奇／赫爾薇爾。
+  這一組在跟車時能穩定拉高自身輸出，
+  是非常理想的跟車選擇。`,
+        en: `【Joiner Tier 2: +25% damage / penetration】
+  Jessie / Jasser / Jeronimo / Blanchette / Hervor.
+  As joiners they steadily increase your own damage
+  and are excellent choices for the first slot.`,
+        ko: `【참가 2티어: 피해값/관통 +25%】
+  제시 / 제설 / 헤로니모 / 블랑셰 / 헤르보르.
+  참가 시 자신의 딜을 안정적으로 올려 주며,
+  첫 슬롯에 두기 좋은 선택입니다.`,
+        ar: `【الطبقة الثانية للمشاركين: ضرر/اختراق +25٪】
+  Jessie و Jasser و Jeronimo و Blanchette و Hervor.
+  كمشاركين، يرفعون ضرر وحدتك بثبات،
+  وهم خيارات ممتازة للخانة الأولى.`,
+        ru: `【Участники 2-го эшелона: урон/пробив +25%】
+  Jessie / Jasser / Jeronimo / Blanchette / Hervor.
+  В роли участников они стабильно повышают ваш урон
+  и отлично подходят для первого слота.`
+      },
+      {
+        zh: `【跟車其他穩定增傷】
+  玲奈／索尼婭／諾拉／格溫／亨德里克／麗姬婭。
+  依照你實際使用的兵種與陣容來搭配即可，
+  全部都屬於「可以安心上車」的穩定增傷選項。`,
+        en: `【Other stable joiner buffs】
+  Reina / Sonya / Norah / Gwen / Hendrik / Ligeia.
+  Use them according to your troop types and lineup;
+  all of them are “safe to use” stable buff options as rally joiners.`,
+        ko: `【기타 안정적인 참가 버프】
+  레이나 / 소냐 / 노라 / 그웬 / 헨드릭 / 리게이아.
+  사용 중인 병종과 조합에 맞춰 선택하면 되며,
+  모두 ‘안심하고 태워도 되는’ 안정적인 버프 영웅들입니다.`,
+        ar: `【زيادات ضرر ثابتة أخرى للمشاركين】
+  Reina و Sonya و Norah و Gwen و Hendrik و Ligeia.
+  استعملهم حسب نوع وحداتك وتشكيلتك؛
+  جميعهم خيارات آمنة ذات زيادة ضرر ثابتة عند المشاركة في الحشد.`,
+        ru: `【Прочие стабильные бафы для участников】
+  Reina / Sonya / Norah / Gwen / Hendrik / Ligeia.
+  Выбирайте их в зависимости от войск и сетапа;
+  все они — стабильные и безопасные варианты для участия в ралли.`
+      },
+      {
+        zh: `【跟車不建議：機率型增傷】
+  羅根／米娅／格雷格／琳恩／韋恩／弗洛拉。
+  就算只是跟車，這些英雄的增傷也依賴機率觸發，
+  輸出忽高忽低，不建議作為獵熊的主要跟車增傷來源。`,
+        en: `【Not recommended as joiners: RNG damage】
+  Logan / Mia / Greg / Lynn / Wayne / Flora.
+  Even as rally joiners, their damage relies on chance,
+  so the output fluctuates heavily and they are not recommended as main damage buffers for Bear Trap.`,
+        ko: `【참가 비추천: 확률형 피해 증가】
+  로건 / 미아 / 그레그 / 린 / 웨인 / 플로라.
+  참가 역할이라 해도 이들의 피해 증가는 확률에 의존하기 때문에
+  딜이 심하게 요동쳐, 곰 덫에서 주요 딜 버퍼로 쓰는 것은 비추천입니다.`,
+        ar: `【غير مفضّلين كمشاركين: زيادة ضرر احتمالية】
+  Logan و Mia و Greg و Lynn و Wayne و Flora.
+  حتى كمشاركين، يعتمد ضررهم على الاحتمال،
+  لذلك يتذبذب الضرر بشكل كبير ولا يُنصح بهم كمصادر رئيسية لزيادة الضرر في مصيدة الدب.`,
+        ru: `【Не рекомендуются как участники: случайный урон】
+  Logan / Mia / Greg / Lynn / Wayne / Flora.
+  Даже в роли участников их бонус к урону зависит от шанса,
+  из-за чего урон сильно скачет, поэтому не стоит использовать их как основных баф-героев в Bear Trap.`
       }
     ]
   },
@@ -1972,6 +2272,7 @@ DOG.i18nText = function(objOrString){
     return objOrString[L] || objOrString.en || objOrString.zh || Object.values(objOrString)[0] || '';
   }catch{ return String(objOrString||''); }
 };
+
 
 
 
