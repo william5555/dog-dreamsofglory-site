@@ -80,11 +80,11 @@
         "ru": "Список альянсов NAP"
       },
       "body": {
-        "zh": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
-        "en": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
-        "ko": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
-        "ar": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
-        "ru": "DoW – Dow academy\nBOS – Wsr academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy"
+        "zh": "DoW – Dow academy\nBOS – Bos academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
+        "en": "DoW – Dow academy\nBOS – Bos academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ko": "DoW – Dow academy\nBOS – Bos academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ar": "DoW – Dow academy\nBOS – Bos academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy",
+        "ru": "DoW – Dow academy\nBOS – Bos academy\nDOG – dog academy\ntQC\nKOR – kor academy\nABC\nARS – Gab academy"
       },
       "ts": "2025-11-05T13:25:00Z"
     },
@@ -109,6 +109,7 @@
     }
   ]
 }
+
 
 
 
